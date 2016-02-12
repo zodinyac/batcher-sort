@@ -1,6 +1,12 @@
 # batcher-sort
 Implementation of Batcher's sort using MPI.
 
+### Batcher
+Usage:
+```sh
+./batcher <input.dat> <output.dat>
+```
+
 ### Generator
 Generates a file with random sequence.
 Usage:
