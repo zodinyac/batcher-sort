@@ -14,3 +14,10 @@ Usage:
 ```sh
 ./reader <input.dat>
 ```
+
+### Tester
+Tests that file is sorted.
+Usage:
+```sh
+./tester <input.dat>
+```
