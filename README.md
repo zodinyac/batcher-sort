@@ -7,3 +7,10 @@ Usage:
 ```sh
 ./generator <output.dat> <count of elements>
 ```
+
+### Reader
+Binary file reader.
+Usage:
+```sh
+./reader <input.dat>
+```
