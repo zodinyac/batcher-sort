@@ -21,3 +21,10 @@ Usage:
 ```sh
 ./tester <input.dat>
 ```
+
+### QSort
+Classic C qsort to compare with Batcher's sort.
+Usage:
+```sh
+./qsort <input.dat> <output.dat>
+```
