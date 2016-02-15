@@ -237,14 +237,8 @@ int main(int argc, char *argv[])
     MPI_File_set_size(output, 0);
     
     int skip = elems_count_new - elems_count;
-    int print_offset = 0, print_count = 0;
-    if (skip >= elems_per_proc_count * rank && skip < elems_per_proc_count * (rank + 1)) {
-        skip -= elems_per_proc_count * rank;
-        print_offset = skip;
-        print_count = elems_per_proc_count - skip;
-    } else {
-        print_count = elems_per_proc_count;
-    }
+    int print_offset = (skip / elems_per_proc_count == rank) * (skip % elems_per_proc_count);
+    int print_count = (skip / elems_per_proc_count <= rank) * elems_per_proc_count - print_offset;
     
     write_time = MPI_Wtime();
 
