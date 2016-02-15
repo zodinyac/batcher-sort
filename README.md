@@ -22,10 +22,10 @@ Usage:
 ```
 
 ### Tester
-Tests that file is sorted.
+Tests that file is sorted. You can use that program with source file which contains unsorted array. The tester will check that input file contains a full copy of sorted source array and nothing else.
 Usage:
 ```sh
-./tester <input.dat>
+./tester <input.dat> [source.dat]
 ```
 
 ### QSort
